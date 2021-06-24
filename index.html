@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap" rel="stylesheet">
+        <title>Ecole de Magie</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>   
+        <body id='body'>
+            <header>
+                <div class="wrapper">
+                    <h1>Ecole de Magie <span class="orange">.</span></h1>
+                    <nav>
+                        <ul>
+                            <li><a class="glace1" href="#main-image">Accueil</a></li>
+                            <li><a class="glace2" href="#steps">Destination</a></li>
+                            <li><a class="glace3" href="#posibilities">Circuit</a></li>
+                            <li><a clas class="glace4" href="#contact">Contact</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <section id="main-image">
+                
+                <div class="wrapper">
+                    <h2>organisez votre<br><strong>voyage magique</strong></h2>
+                    <a class="boutton" href="#">par ici</a>
+                    
+                </div>
+            </section> 
+            
+            <section id="steps">
+                <div class="wrapper">
+                    <ul>
+                        <li id="steps-1">
+                            <h4>planifier</h4>
+                            <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+                        </li>
+                        <li id="steps-2">
+                            <h4>organiser</h4>
+                            <p>Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+                        </li>
+                        <li id="steps-3">
+                            <h4>voyager</h4>
+                            <p>ous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+                        </li> 
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </section>
+            <section id="posibilities">
+                <div class="wrapper">
+                    <article style="background:url('images/article-image-1.jpg')">
+                        <div class="overlay">
+                            <h4>partez en famille</h4>
+                            <p><small>Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux !</small></p>
+                                                    <a class="boutton2" href="#"> Plus d'infos</a>
+                        </div>
+
+                    </article>
+                    
+                     <article style="background:url('images/article-image-2.jpg')">
+                        <div class="overlay">
+                            <h4>partez en famille</h4>
+                            <p><small>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien !</small></p>
+                            <a class="boutton2" href="#"> Plus d'infos</a>
+                        </div>
+                        
+                    </article>
+                    <div class="clear"></div>
+                
+                </div>
+            </section>
+            <section id="contact">
+                <div class="wrapper">
+                    <h3>contactez-nous</h3>
+                    <p>Chez Travel Agency nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                    
+                    <form>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" placeholder="Allo... ici votre nom"> 
+                        <label for="email">Email :</label>
+                        <input type="text" id="email" placeholder="Allo... ici votre email"> 
+                        
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse">
+                        <br><br><br>
+                        
+                         <label for="code-postale">Code postale</label>
+                        <input type="text" id="code-postale">
+                        
+                        
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville"><br><br><br>
+                        
+                        <p>Quel est votre preference de transport?
+                            <br>
+                        Avion <input type="checkbox" value="avion"> 
+                        Train <input type="checkbox" value="train"> 
+                        Velo <input type="checkbox" value="velo"></p>
+                        <br><br>
+                        <p> Vous etes :</p>
+                       
+                        <p>Majeur <input type="radio" value="majeur" name="sexe">
+                        
+                            Adolesent <input type="radio" value="adolesent" name="sexe"></p>
+                        <br><br>
+                       
+                      
+                        <label for="message">Message :</label>
+                        <br><br>
+                        <textarea rows="10"  cols="70" placeholder=" Ecrire votre message" style="padding:10px"></textarea>
+                                                <br><br>
+
+                        <input class="boutton3" type="submit" value="Valider" id='valider'>
+                       
+                         
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="wrapper">
+                     <h1>Travel Agency<span class="orange">.</span></h1>
+                    <p class="copyright">Copyright © Tous droits réservés.</p>
+                </div>
+            </footer>
+        
+   
+
+        </body>
+
+<script> var i = 0 ; $("body").click(function(){ i++ ;   console.log('Id click is :' +  Math.random()  + " id est :" + i ) ;  }); </script>
+
+</html>
